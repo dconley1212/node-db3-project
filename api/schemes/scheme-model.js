@@ -172,7 +172,7 @@ async function addStep(scheme_id, step) {
     scheme_id: scheme_id,
   });
 
-  const findAllSteps = await findSteps(addStep);
+  const findAllSteps = await findSteps(scheme_id);
   return findAllSteps;
 }
 
